@@ -1,0 +1,7 @@
+backend/.venv/
+frontend/my-frontend/node_modules/
+*.pyc
+__pycache__/
+attendance.db
+.env
+attendance_export.xlsx
