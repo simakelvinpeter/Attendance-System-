@@ -1,4 +1,4 @@
-📄 R307 Fingerprint Attendance 
+R307 Fingerprint Attendance 
 
 Overview
 
@@ -12,33 +12,33 @@ Fingerprint enrollment and identification
 Attendance logging and Excel export
 
 
- 👥 Team Members & Responsibilities
+Team Members & Responsibilities
 
 | Name                             | Matric No. | Role                                                                        |
 Sima Kelvin Peter            | 20234968   | Environment setup (Backend & Frontend dev environment)                      |
 Wisdom Chizurumoke Edeji     | 20205317   | Backend development (Flask API, SQLite integration, fingerprint processing) |
 Oluwatofunmi Gideon Akinwale | 20214454   | Frontend development (Tkinter GUI, Excel export, API integration)           |
 
-🖥️ Environment Setup (Windows)
-1️⃣ Install Python
+Environment Setup (Windows)
+1. Install Python
 
 1. Download Python 3.10+ from [python.org](https://www.python.org/downloads/windows/).
 2. During installation, check "Add Python to PATH".
 
 
-2️⃣ Create Virtual Environment
+2. Create Virtual Environment
 powershell
 python -m venv fingerprint-venv
 fingerprint-venv\Scripts\activate
 python -m pip install --upgrade pip
 
- 3️⃣ Install Dependencies
+3. Install Dependencies
 
 powershell
 pip install pyserial pyfingerprint pandas openpyxl cryptography flask sqlalchemy
 (Tkinter is included in Python on Windows.)
 
-4️⃣ Install USB–Serial Driver
+4. Install USB–Serial Driver
 
 Plug in USB-TTL adapter.
 Check **Device Manager → Ports (COM & LPT) for your COM port.
@@ -48,7 +48,7 @@ If driver missing, install:
   [CP210x Driver](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers)
 
 
-5️⃣ Wiring (R307 → USB-TTL)
+5. Wiring (R307 → USB-TTL)
 
 | R307 Pin | USB-TTL Pin |
 | -------- | ----------- |
@@ -59,7 +59,7 @@ If driver missing, install:
 
 
 
-6️⃣ Test Fingerprint Sensor
+6. Test Fingerprint Sensor
 
 Create a file `enroll.py`:
 
@@ -110,7 +110,7 @@ python enroll.py
 
 ---
 
-📂 Project Structure
+Project Structure
 fingerprint_attendance/
 │── backend/
 │   ├── app.py          # Flask backend
@@ -122,16 +122,16 @@ fingerprint_attendance/
 │── requirements.txt
 │── README.md
 
-🛠 Task Distribution
+Task Distribution
 
-✅ Sima Kelvin Peter (20234968)
+Sima Kelvin Peter (20234968)
 
 Created Python environment
 Installed dependencies
 Installed USB–Serial driver
 Verified sensor with `enroll.py`
 
-🛠 Wisdom Chizurumoke Edeji (20205317)
+Wisdom Chizurumoke Edeji (20205317)
 
 Build Flask backend with endpoints:
 
@@ -141,7 +141,7 @@ Build Flask backend with endpoints:
    Integrate `pyfingerprint` with backend
    Secure API with token-based authentication
 
-🎨 Oluwatofunmi Gideon Akinwale (20214454)
+Oluwatofunmi Gideon Akinwale (20214454)
 Build Tkinter GUI:
 
   Trigger enrollment & identification
@@ -152,7 +152,7 @@ Build Tkinter GUI:
 
 
 
-🚀 Running the Project
+Running the Project
 
 1. Start backend:
 
